@@ -582,7 +582,7 @@ weight.1 = 0
 weight.2 = 3
 weight.3 = 8
 weight.4 = 10
-min_pop = 15
+min_pop = 20
 blacklisted_roles = []
 repeatable_weight_decrease = 8
 repeatable = 1
@@ -645,7 +645,7 @@ tags = [
 
 ["Roundstart Traitor"]
 weight = 10
-min_pop = 10
+min_pop = 12
 blacklisted_roles = []
 min_antag_cap = 1
 max_antag_cap.denominator = 24
@@ -843,11 +843,11 @@ tags = [
 ]
 
 ["Roundstart Spies"]
-weight.1 = 10
-weight.2 = 10
-weight.3 = 10
-weight.4 = 10
-min_pop = 10
+weight.1 = 8
+weight.2 = 8
+weight.3 = 8
+weight.4 = 8
+min_pop = 13
 blacklisted_roles = []
 min_antag_cap.denominator = 20
 min_antag_cap.offset = 1
