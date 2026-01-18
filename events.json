@@ -106,7 +106,7 @@
 		"weight": 15
 	},
 	"Radiation Storm": {
-		"min_players": 0,
+		"min_players": 15,
 		"weight": 10
 	},
 	"Sandstorm: Directional": {
@@ -156,11 +156,11 @@
 		"earliest_start": 18000
 	},
 	"Supermatter Surge": {
-		"min_players": 0,
+		"min_players": 15,
 		"weight": 15
 	},
 	"Supermatter Surge: Poly's Revenge": {
-		"min_players": 0,
+		"min_players": 15,
 		"weight": 0
 	},
 	"Tram Malfunction": {
