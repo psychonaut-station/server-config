@@ -19,22 +19,22 @@ $include map_vote.txt
 # There are various options which are hard-locked for security reasons.
 
 ## Server name: This appears at the top of the screen in-game and in the BYOND hub. Uncomment and replace 'tgstation' with the name of your choice.
-# SERVERNAME tgstation
+SERVERNAME Psychonaut Station
 
 ## Server SQL name: This is the name used to identify the server to the SQL DB, distinct from SERVERNAME as it must be at most 32 characters.
 # SERVERSQLNAME tgstation
 
 ## Link that will be displayed on hub title
-HUB_NAME_LINK
+HUB_NAME_LINK https://ss13.tr/discord
 
 ## Station name: The name of the station as it is referred to in-game. If commented out, the game will generate a random name instead.
-STATIONNAME Space Station 13
+#STATIONNAME Space Station 13
 
 ## Put on byond hub: Uncomment this to put your server on the byond hub.
-#HUB
+HUB
 
 ## Lobby time: This is the amount of time between rounds that players have to setup their characters and be ready.
-LOBBY_COUNTDOWN 180
+LOBBY_COUNTDOWN 240
 
 ## Round End Time: This is the amount of time after the round ends that players have to murder death kill each other.
 ROUND_END_COUNTDOWN 90
@@ -42,46 +42,46 @@ ROUND_END_COUNTDOWN 90
 ## Comment this out if you want to use the SQL based admin system, the legacy system uses admins.txt.
 ## You need to set up your database to use the SQL based system.
 ## This flag is automatically enabled if SQL_ENABLED isn't
-ADMIN_LEGACY_SYSTEM
+#ADMIN_LEGACY_SYSTEM
 
 ##Uncomment this to stop any admins loaded by the legacy system from having their rank edited by the permissions panel
-#PROTECT_LEGACY_ADMINS
+PROTECT_LEGACY_ADMINS
 
 ##Uncomment this to stop any ranks loaded by the legacy system from having their flags edited by the permissions panel
 #PROTECT_LEGACY_RANKS
 
 ##Uncomment this to have admin ranks only loaded from the legacy admin_ranks.txt
 ##If enabled, each time admins are loaded ranks the database will be updated with the current ranks and their flags
-#LOAD_LEGACY_RANKS_ONLY
+LOAD_LEGACY_RANKS_ONLY
 
 ## Comment this out to stop locally connected clients from being given the almost full access !localhost! admin rank
-ENABLE_LOCALHOST_RANK
+#ENABLE_LOCALHOST_RANK
 
 ## Uncomment this entry to have certain jobs require your account to be at least a certain number of days old to select. You can configure the exact age requirement for different jobs by editing
 ## the minimal_player_age variable in the files in folder /code/game/jobs/job/.. for the job you want to edit. Set minimal_player_age to 0 to disable age requirement for that job.
 ## REQUIRES the database set up to work. Keep it hashed if you don't have a database set up.
 ## NOTE: If you have just set-up the database keep this DISABLED, as player age is determined from the first time they connect to the server with the database up. If you just set it up, it means
 ## you have noone older than 0 days, since noone has been logged yet. Only turn this on once you have had the database up for 30 days.
-#USE_AGE_RESTRICTION_FOR_JOBS
+USE_AGE_RESTRICTION_FOR_JOBS
 
 ## Uncomment this to have the job system use the player's account creation date, rather than the when they first joined the server for job timers.
-#USE_ACCOUNT_AGE_FOR_JOBS
+USE_ACCOUNT_AGE_FOR_JOBS
 
 ## Unhash this to track player playtime in the database. Requires database to be enabled.
-#USE_EXP_TRACKING
+USE_EXP_TRACKING
 ## Unhash this to enable playtime requirements for head jobs.
-#USE_EXP_RESTRICTIONS_HEADS
+USE_EXP_RESTRICTIONS_HEADS
 ## Unhash this to override head jobs' playtime requirements with this number of hours.
 ## Leave this commented out to use the values defined in the job datums. Values in the datums are stored as minutes.
-#USE_EXP_RESTRICTIONS_HEADS_HOURS 3
+USE_EXP_RESTRICTIONS_HEADS_HOURS 24
 ## Unhash this to change head jobs' playtime requirements so that they're based on department playtime, rather than crew playtime.
-#USE_EXP_RESTRICTIONS_HEADS_DEPARTMENT
+USE_EXP_RESTRICTIONS_HEADS_DEPARTMENT
 ## Unhash this to enable playtime requirements for certain non-head jobs, like Engineer and Scientist.
-#USE_EXP_RESTRICTIONS_OTHER
+USE_EXP_RESTRICTIONS_OTHER
 ## Allows admins to bypass job playtime requirements.
-#USE_EXP_RESTRICTIONS_ADMIN_BYPASS
+USE_EXP_RESTRICTIONS_ADMIN_BYPASS
 ## Unhash this to have intern tags automatically added to ID cards for station roles depending on the living hours of the player holding them.
-#USE_LOW_LIVING_HOUR_INTERN
+USE_LOW_LIVING_HOUR_INTERN
 ## If USE_LOW_LIVING_HOUR_INTERN is unhashed, players under this number of living hours have [Intern] added to their ID card. If this isn't set, uses USE_EXP_RESTRICTIONS_HEADS_HOURS instead. If that isn't set, it finally defaults to a hardcoded fallback of 15 hours.
 #USE_LOW_LIVING_HOUR_INTERN_HOURS 50
 
@@ -147,18 +147,18 @@ ALLOW_RESPAWN 0
 RESPAWN_DELAY 0
 
 ## set a hosted by name for unix platforms
-HOSTEDBY Yournamehere
+#HOSTEDBY Yournamehere
 
 ## Uncomment this to stop people connecting to your server without a registered ckey. (i.e. guest-* are all blocked from connecting).
 ## You probably want this enabled for a production server.
-#GUEST_BAN
+GUEST_BAN
 
 ## IPINTEL:
 ## This allows you to detect likely proxies by checking ips against getipintel.net
 ## Rating to warn at: (0.8 is good, 1 is 100% likely to be a spammer/proxy, 0.8 is 80%, etc) anything equal to or higher then this number triggers an admin warning
-#IPINTEL_RATING_BAD 0.8
+IPINTEL_RATING_BAD 0.8
 ## Contact email, (required to use the service, leaving blank or default disables IPINTEL)
-#IPINTEL_EMAIL ch@nge.me
+IPINTEL_EMAIL %ipintelmail%
 ## Query base, if you pay for more queries this is what you want to change.
 #IPINTEL_BASE check.getipintel.net
 ## Maximum number of queries in a minute
@@ -174,7 +174,7 @@ IPINTEL_REJECT_BAD
 ## How long to store results in the cache before they must be retrieved again. IN DAYS.
 #IPINTEL_CACHE_LENGTH 7
 ## How many minutes of living playtime to be automatically exempt from IPIntel. 0 for never.
-#IPINTEL_EXEMPT_PLAYTIME_LIVING 0
+IPINTEL_EXEMPT_PLAYTIME_LIVING 60
 
 ## Uncomment to allow web client connections
 #ALLOW_WEBCLIENT
@@ -188,7 +188,7 @@ IPINTEL_REJECT_BAD
 #USEWHITELIST
 
 ## The address shown for the game server in the TGS check command
-# PUBLIC_ADDRESS ss13.example.com:2506
+PUBLIC_ADDRESS play.ss13.tr:3131
 
 ## set a server location for world reboot. Don't include the byond://, just give the address and port.
 ## Don't set this to the same server, BYOND will automatically restart players to the server when it has restarted.
@@ -202,17 +202,17 @@ IPINTEL_REJECT_BAD
 # WIKIURL https://wiki.tgstation13.org
 
 ## Rules address
-# RULESURL http://tgstation13.org/wiki/Rules
+RULESURL https://wiki.ss13.tr/Kurallar
 
 ## Github address
-# GITHUBURL https://www.github.com/tgstation/tgstation
+GITHUBURL https://github.com/psychonaut-station/PsychonautStation
 
 ## Discord bot command prefix, if the discord bot is used
-# DISCORDBOTCOMMANDPREFIX /
+DISCORDBOTCOMMANDPREFIX /
 
 ## https://github.com/psychonaut-station/api.turkb.us
-# APITOKEN
-# APIURL https://api.turkb.us/v2
+APITOKEN %apitoken%
+APIURL https://api.ss13.tr/v2
 
 ## Round specific stats address
 ## Link to round specific parsed logs; IE statbus. It is appended with the RoundID automatically by ticker/Reboot()
@@ -223,7 +223,7 @@ IPINTEL_REJECT_BAD
 ## Game Logs address
 ## Incase you don't have a fancy parsing system, but still want players to be able to find where you keep your server's logs.
 ## Example: https://tgstation13.org/parsed-logs/basil/data/logs/
-# GAMELOGURL
+GAMELOGURL https://ss13.tr/logs
 
 ## Ban appeals URL - usually for a forum or wherever people should go to contact your admins.
 # BANAPPEALS http://justanotherday.example.com
@@ -238,6 +238,7 @@ IPINTEL_REJECT_BAD
 ## or your package manager
 ## The default value assumes yt-dlp is in your system PATH
 # INVOKE_YOUTUBEDL yt-dlp
+INVOKE_YOUTUBEDL /usr/local/bin/yt-dlp --no-warnings --proxy %ytdlproxy%
 
 ## Path to text file containing browser cookies to bypass youtube captcha for yt-dlp
 # YTDL_COOKIES ~/cookies.txt
@@ -248,7 +249,7 @@ REQUEST_INTERNET_SOUND
 ## Request Internet Sound Allowed URL'S comma separated, urls here are the only sites allowed through Request Internet Sound, Add more to allow more, or remove to disallow.
 ## The Defaults here are all supported by yt-dlp
 ## Ensure . and / are escaped with \
-REQUEST_INTERNET_ALLOWED (^(https?:\/\/)?(www\.)?(youtube\.com\/|youtu\.be\/)[\w\-\/?=&%]*$)
+REQUEST_INTERNET_ALLOWED (^(https?:\/\/)?(www\.)?(youtube\.com\/|youtu\.be\/|soundcloud\.com\/)[\w\-\/?=&%]*$)
 
 ## In-game features
 
@@ -258,7 +259,7 @@ REQUEST_INTERNET_ALLOWED (^(https?:\/\/)?(www\.)?(youtube\.com\/|youtu\.be\/)[\w
 ## Playtime Requirements is in minutes, Required Account Age is in days.
 ## Human Authority Whitelist Setting can either be 0 or 1.
 ## Make sure to read the start of the file to get a more in-depth explanation of what each entry does!
-#LOAD_JOBS_FROM_TXT
+LOAD_JOBS_FROM_TXT
 
 ## Uncomment this to forbid admins from possessing the singularity.
 ## It is intentional that Admins can edit this config, as its meant to serve as a deterrent/warning for admin abuse.
@@ -289,7 +290,7 @@ TICKLAG 0.5
 #AUTOMUTE_ON
 
 ## Uncomment this to let players see their own notes (they can still be set by admins only)
-#SEE_OWN_NOTES
+SEE_OWN_NOTES
 
 ### Comment these two out to prevent notes fading out over time for admins.
 ## Notes older then this will start fading out.
@@ -333,10 +334,10 @@ NOTIFY_NEW_PLAYER_ACCOUNT_AGE 1
 
 ## Notify the irc channel when a new player makes their first connection
 ##	Requires database
-#IRC_FIRST_CONNECTION_ALERT
+IRC_FIRST_CONNECTION_ALERT
 
 ## Discord ID of a role that should be pinged when a new player makes their first connection
-#NEW_PLAYER_ALERT_ROLE_ID 1138188190604341308
+NEW_PLAYER_ALERT_ROLE_ID 1386376002946465982
 
 ## Deny all new connections by ckeys we haven't seen before (exempts admins and only denies the connection if the database is enabled and connected)
 ##	Requires database
@@ -370,7 +371,7 @@ AUTOCONVERT_NOTES
 ANNOUNCE_ADMIN_LOGOUT
 
 ## Uncomment to have an admin message sent anytime an admin connects to a round in play, you can edit the messages in admin.dm
-#ANNOUNCE_ADMIN_LOGIN
+ANNOUNCE_ADMIN_LOGIN
 
 ## Map rotation
 ## You should edit maps.txt to match your configuration when you enable this.
@@ -396,7 +397,7 @@ AUTOADMIN_RANK Game Master
 #AUTO_DEADMIN_ON_READY_OR_LATEJOIN
 
 ## Uncomment to automatically deadmin antagonists when they gain the role.
-#AUTO_DEADMIN_ANTAGONISTS
+AUTO_DEADMIN_ANTAGONISTS
 
 ## Uncomment to automatically deadmin specific role sets when a player joins the game.
 #AUTO_DEADMIN_HEADS
@@ -423,9 +424,9 @@ CLIENT_ERROR_BUILD 1590
 ## Admins are exempt from these limits.
 ## Hitting the minute limit notifies admins.
 ## Set to 0 or comment out to disable.
-SECOND_TOPIC_LIMIT 10
+SECOND_TOPIC_LIMIT 20
 
-MINUTE_TOPIC_LIMIT 200
+MINUTE_TOPIC_LIMIT 250
 
 
 ## CLICK RATE LIMITING
@@ -457,17 +458,17 @@ MINUTE_CLICK_LIMIT 400
 ## i.e. CHANNEL_ANNOUNCE_NEW_GAME chat_channel_tag_1
 ## i.e. CHANNEL_ANNOUNCE_NEW_GAME chat_channel_tag_2
 
-## Which channels will have a message about a new game starting, message includes the station name.
-#CHANNEL_ANNOUNCE_NEW_GAME
+## Which channel will have a message about a new game starting, message includes the station name.
+CHANNEL_ANNOUNCE_NEW_GAME genel
 
-## Which channels will have a message about a new game starting, message includes the round ID of the game that has just ended.
-#CHANNEL_ANNOUNCE_END_GAME
+## Which channel will have a message about a new game starting, message includes the round ID of the game that has just ended.
+CHANNEL_ANNOUNCE_END_GAME genel
 
 ## Ping users who use the `notify` command when a new game starts.
-#CHAT_NEW_GAME_NOTIFICATIONS
+CHAT_NEW_GAME_NOTIFICATIONS genel
 
-## Uncomment this flag to validate admin commands from discord by requiring they come from linked discord accounts and that those discord accounts link to a ckey with the right admin permissions.
-# SECURE_CHAT_COMMANDS
+## Uncomment this to validate admin commands from discord by requiring they come from linked discord accounts and that those discord accounts link to a ckey with the right admin permissions.
+SECURE_CHAT_COMMANDS
 
 ## Allow admin hrefs that don't use the new token system, will eventually be removed
 #DEBUG_ADMIN_HREFS
@@ -477,7 +478,7 @@ MINUTE_CLICK_LIMIT 400
 ##The Master Controller(MC) is the primary system controlling timed tasks and events in SS13 (lobby timer, game checks, lighting updates, atmos, etc)
 ##Default base MC tick rate (1 = process every "byond tick" (see: tick_lag/fps config settings), 2 = process every 2 byond ticks, etc)
 ##	Setting this to 0 will prevent the Master Controller from ticking
-BASE_MC_TICK_RATE 1
+BASE_MC_TICK_RATE 0.75
 
 ##High population MC tick rate
 ##	Byond rounds timer values DOWN, but the tick rate is modified with heuristics during lag spites so setting this to something like 2
@@ -492,16 +493,16 @@ BASE_MC_TICK_RATE 1
 HIGH_POP_MC_TICK_RATE 1.1
 
 ##Engage high pop mode if player count raises above this (Player in this context means any connected user. Lobby, ghost or in-game all count)
-HIGH_POP_MC_MODE_AMOUNT 65
+HIGH_POP_MC_MODE_AMOUNT 130
 
 ##Disengage high pop mode if player count drops below this
-DISABLE_HIGH_POP_MC_MODE_AMOUNT 60
+DISABLE_HIGH_POP_MC_MODE_AMOUNT 120
 
 ## Uncomment to prevent the world from sleeping while no players are connected after initializations
 #RESUME_AFTER_INITIALIZATIONS
 
 ## Uncomment to set the number of /world/Reboot()s before the DreamDaemon restarts itself. 0 means restart every round. Requires tgstation server tools.
-#ROUNDS_UNTIL_HARD_RESTART 10
+ROUNDS_UNTIL_HARD_RESTART 2
 
 ## Enable automatic profiling - Byond 513.1506 and newer only.
 #AUTO_PROFILE
@@ -517,7 +518,7 @@ DRIFT_PROFILE_DELAY 150
 
 ## Uncomment to enable global ban DB using the provided URL. The API should expect to receive a ckey at the end of the URL.
 ## More API details can be found here: https://centcom.melonmesa.com
-#CENTCOM_BAN_DB https://centcom.melonmesa.com/ban/search
+CENTCOM_BAN_DB https://centcom.melonmesa.com/ban/search
 ## Uncomment to enable source whitelisting, a comma-separated list (no spaces) of CentCom sources (sourceName).
 ## If enabled, only bans from these servers will be shown to admins using CentCom. The default sources list is an example.
 #CENTCOM_SOURCE_WHITELIST Beestation MRP,TGMC,FTL13
@@ -574,7 +575,7 @@ MOTD motd.txt
 ## The cache is assumed to be cleared by TGS recompiling, which deletes `cache/`.
 ## This should be disabled (through `CACHE_ASSETS 0`) on development,
 ## but enabled on production (the default).
-CACHE_ASSETS 0
+CACHE_ASSETS 1
 
 ## Enables 'smart' asset caching, for assets that support it.
 ## This is a type of asset cache that automatically invalidates itself based on inputs to the asset generation.
@@ -634,12 +635,12 @@ PR_ANNOUNCEMENTS_PER_ROUND 5
 
 ## Comment to disable sending a toast notification on the host server when initializations complete.
 ## Even if this is enabled, a notification will only be sent if there are no clients connected.
-TOAST_NOTIFICATION_ON_INIT
+#TOAST_NOTIFICATION_ON_INIT
 
 # Webhook URL for Discord rounstart alerts
-#ENABLE_DISCORD_ROUND_ALERTS
-DISCORD_ROUND_ALERT_WEBHOOK_URL
-DISCORD_ROUND_ALERT_ROLE_ID
+ENABLE_DISCORD_ROUND_ALERTS
+DISCORD_ROUND_ALERT_WEBHOOK_URL https://discord.com/api/webhooks/1128283363208351794/NKtxGTnNeYe5iYyr4oevLhKaywHVIYbRqU-pAYqa3ugoh1fG4xMo7tvs9tsf5R8-jMNx
+DISCORD_ROUND_ALERT_ROLE_ID 968246531784314930
 
 ## Causes configuration errors to spit out runtimes
 CONFIG_ERRORS_RUNTIME
@@ -654,7 +655,7 @@ UPLOAD_LIMIT_ADMIN 5242880
 TIMEZONE_OFFSET 108000
 
 ## Uncomment to force users to link their Discord accounts before connecting
-# REQUIRE_DISCORD_LINKING
+REQUIRE_DISCORD_LINKING
 
 ## Uncomment to allow admins with +DEBUG to start the byond-tracy profiler during the round.
 #ALLOW_TRACY_START
@@ -674,7 +675,7 @@ TGUI_MAX_CHUNK_COUNT 32
 GENERATE_ASSETS_IN_INIT
 
 ## Etiketlenmesini istediğin discord rolünün id sini yaz.
-#SUSPICIOUS_LOG_DISCORD_ROLE_ID
+SUSPICIOUS_LOG_DISCORD_ROLE_ID 1386376002946465982
 
 ## Minimum time before a heretic can ascend, in minutes
 # MINIMUM_ASCENSION_TIME 3
