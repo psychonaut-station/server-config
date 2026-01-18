@@ -1,5 +1,20 @@
-<!-- Most valid html will work in here, but you have to use URL links for images. -->
+﻿<!-- Most valid html will work in here, but you have to use URL links for images. -->
 
-<h1>Welcome to Space Station 13!</h1>
-
-<i>This server is running a /tg/station 13 Git build.</i>
+<h1>Psychonaut Station'a Hoş Geldin!</h1>
+<br>
+<b style="color: #ff0000">&#x2022; Kurallar ve gelecek eventler hakkında bilgi almak için <b style="color: #ffffff"><a href="https://ss13.tr/discord">Discord sunucumuza katıl (tıkla)</a></b>.</b>
+<br><br>
+<b style="color: #ff0000">&#x2022; Yeni misin? Mesleğinde kendini geliştirmek ve yeni bir şeyler öğrenmek için <b style="color: #ffffff"><a href="https://tgstation13.org/wiki/Main_Page">wiki'yi ziyaret edebilirsin (tıkla)</a></b>.</b>
+<br><br>
+<b style="color: #ff0000">&#x2022; Round boyu gelişen olayları, ne olursa olsun, OOC olarak paylaşmak yasaktır.</b>
+<br><br>
+<b style="color: #ff0000">&#x2022; Herhangi bir sıkıntınızı ya da merak ettiğiniz bir konuyu <b style="color: #ffffff">Admin Help (F1)</b> ile müsait olan yetkililere danışabilirsiniz. </b>
+<br><br>
+<b style="color: #ff0000">&#x2022; Oyun düzgün çalışmıyor ya da her şey karanlık ise <a href="https://www.byond.com/download/">BYOND'u güncelleyin (tıkla)</a>.</b>
+<br><br>
+<b style="color: #ff0000">&#x2022; Space Station 13 açık kaynaklı ve topluluklar tarafından geliştirilen bir oyundur. Sunucuya katkı sağlamayı düşünüyorsan #maintainer, #spriter kanallarından destek alabilirsin.</b>
+<br><br>
+<b style="color: #37ff00">&#x2022; Sunucu masraflarımız topluluk tarafından karşılanıyor, sen de destek olmak için <a href="https://www.patreon.com/PsychonautStation">Patreon'dan abone olabilirsin (tıkla)</a>!</b>
+<br><br>
+<h2 style="color: #ff0000">&#x2022; Mevcut kurallarımız güncellendi. Yeni kurallara ulaşmak için <b style="color: #ffffff"><a href="https://wiki.ss13.tr/Kategori:Kurallar">tıkla</a></b>.</h2>
+<br>
