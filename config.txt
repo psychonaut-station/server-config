@@ -9,6 +9,7 @@ $include interviews.txt
 $include lua.txt
 $include auxtools.txt
 $include map_vote.txt
+$include secret_config.txt
 
 # You can use the @ character at the beginning of a config option to lock it from being edited in-game
 # Example usage:
@@ -158,7 +159,7 @@ GUEST_BAN
 ## Rating to warn at: (0.8 is good, 1 is 100% likely to be a spammer/proxy, 0.8 is 80%, etc) anything equal to or higher then this number triggers an admin warning
 IPINTEL_RATING_BAD 0.8
 ## Contact email, (required to use the service, leaving blank or default disables IPINTEL)
-IPINTEL_EMAIL %ipintelmail%
+#IPINTEL_EMAIL [redacted]
 ## Query base, if you pay for more queries this is what you want to change.
 #IPINTEL_BASE check.getipintel.net
 ## Maximum number of queries in a minute
@@ -211,7 +212,7 @@ GITHUBURL https://github.com/psychonaut-station/PsychonautStation
 DISCORDBOTCOMMANDPREFIX /
 
 ## https://github.com/psychonaut-station/api.turkb.us
-APITOKEN %apitoken%
+# APITOKEN [redacted]
 APIURL https://api.ss13.tr/v2
 
 ## Round specific stats address
@@ -237,8 +238,7 @@ GAMELOGURL https://ss13.tr/logs
 ## from https://github.com/yt-dlp/yt-dlp/releases
 ## or your package manager
 ## The default value assumes yt-dlp is in your system PATH
-# INVOKE_YOUTUBEDL yt-dlp
-INVOKE_YOUTUBEDL /usr/local/bin/yt-dlp --no-warnings --proxy %ytdlproxy%
+# INVOKE_YOUTUBEDL [redacted]
 
 ## Path to text file containing browser cookies to bypass youtube captcha for yt-dlp
 # YTDL_COOKIES ~/cookies.txt
