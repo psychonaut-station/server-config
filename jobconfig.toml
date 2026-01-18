@@ -20,8 +20,8 @@
 ## Best of luck editing!
 
 [AI]
-"# Playtime Requirements" = 180
-"# Required Account Age" = 30
+"Playtime Requirements" = 2160
+"Required Account Age" = 0
 "# Required Character Age" = 0
 "# Spawn Positions" = 1
 "# Total Positions" = 1
@@ -41,7 +41,7 @@
 "# Total Positions" = -1
 
 [ATMOSPHERIC_TECHNICIAN]
-"# Playtime Requirements" = 60
+"Playtime Requirements" = 60
 "# Required Account Age" = 0
 "# Required Character Age" = 0
 "# Spawn Positions" = 2
@@ -69,9 +69,9 @@
 "# Total Positions" = 3
 
 [CAPTAIN]
-"# Human Authority Whitelist Setting" = "HUMANS_ONLY"
-"# Playtime Requirements" = 180
-"# Required Account Age" = 14
+"Human Authority Whitelist Setting" = "NON_HUMANS_ALLOWED"
+"Playtime Requirements" = 2160
+"Required Account Age" = 0
 "# Required Character Age" = 0
 "# Spawn Positions" = 1
 "# Total Positions" = 1
@@ -91,24 +91,24 @@
 "# Total Positions" = 1
 
 [CHEMIST]
-"# Playtime Requirements" = 60
-"# Required Account Age" = 0
+"Playtime Requirements" = 1440
+"Required Account Age" = 0
 "# Required Character Age" = 0
 "# Spawn Positions" = 2
 "# Total Positions" = 2
 
 [CHIEF_ENGINEER]
-"# Human Authority Whitelist Setting" = "HUMANS_ONLY"
-"# Playtime Requirements" = 180
-"# Required Account Age" = 7
+"Human Authority Whitelist Setting" = "NON_HUMANS_ALLOWED"
+"Playtime Requirements" = 2160
+"Required Account Age" = 0
 "# Required Character Age" = 0
 "# Spawn Positions" = 1
 "# Total Positions" = 1
 
 [CHIEF_MEDICAL_OFFICER]
-"# Human Authority Whitelist Setting" = "HUMANS_ONLY"
-"# Playtime Requirements" = 180
-"# Required Account Age" = 7
+"Human Authority Whitelist Setting" = "NON_HUMANS_ALLOWED"
+"Playtime Requirements" = 2160
+"Required Account Age" = 0
 "# Required Character Age" = 0
 "# Spawn Positions" = 1
 "# Total Positions" = 1
@@ -142,38 +142,38 @@
 "# Total Positions" = 1
 
 [CYBORG]
-"# Playtime Requirements" = 120
-"# Required Account Age" = 21
+"Playtime Requirements" = 480
+"Required Account Age" = 0
 "# Required Character Age" = 0
 "# Spawn Positions" = 3
 "# Total Positions" = 0
 
 [DETECTIVE]
-"# Playtime Requirements" = 300
-"# Required Account Age" = 7
+"Playtime Requirements" = 2880
+"Required Account Age" = 0
 "# Required Character Age" = 0
 "# Spawn Positions" = 1
 "# Total Positions" = 1
 
 [GENETICIST]
-"# Playtime Requirements" = 60
+"Playtime Requirements" = 60
 "# Required Account Age" = 0
 "# Required Character Age" = 0
-"# Spawn Positions" = 2
-"# Total Positions" = 2
+"Spawn Positions" = 3
+"Total Positions" = 3
 
 [HEAD_OF_PERSONNEL]
-"# Human Authority Whitelist Setting" = "HUMANS_ONLY"
-"# Playtime Requirements" = 180
-"# Required Account Age" = 10
+"Human Authority Whitelist Setting" = "NON_HUMANS_ALLOWED"
+"Playtime Requirements" = 2160
+"Required Account Age" = 0
 "# Required Character Age" = 0
 "# Spawn Positions" = 1
 "# Total Positions" = 1
 
 [HEAD_OF_SECURITY]
-"# Human Authority Whitelist Setting" = "HUMANS_ONLY"
-"# Playtime Requirements" = 300
-"# Required Account Age" = 14
+"Human Authority Whitelist Setting" = "NON_HUMANS_ALLOWED"
+"Playtime Requirements" = 2880
+"Required Account Age" = 0
 "# Required Character Age" = 0
 "# Spawn Positions" = 1
 "# Total Positions" = 1
@@ -183,7 +183,7 @@
 "# Required Account Age" = 0
 "# Required Character Age" = 0
 "# Spawn Positions" = 1
-"# Total Positions" = 2
+"Total Positions" = 3
 
 [LAWYER]
 "# Playtime Requirements" = 0
@@ -210,8 +210,8 @@
 "# Playtime Requirements" = 0
 "# Required Account Age" = 0
 "# Required Character Age" = 0
-"# Spawn Positions" = 2
-"# Total Positions" = 2
+"Spawn Positions" = 1
+"Total Positions" = 1
 
 [PRISONER]
 "# Playtime Requirements" = 0
@@ -228,41 +228,41 @@
 "# Total Positions" = 1
 
 [QUARTERMASTER]
-"# Human Authority Whitelist Setting" = "NON_HUMANS_ALLOWED"
-"# Playtime Requirements" = 0
-"# Required Account Age" = 7
+"Human Authority Whitelist Setting" = "NON_HUMANS_ALLOWED"
+"Playtime Requirements" = 2160
+"Required Account Age" = 0
 "# Required Character Age" = 0
 "# Spawn Positions" = 1
 "# Total Positions" = 1
 
 [RESEARCH_DIRECTOR]
-"# Human Authority Whitelist Setting" = "HUMANS_ONLY"
-"# Playtime Requirements" = 180
-"# Required Account Age" = 7
+"Human Authority Whitelist Setting" = "NON_HUMANS_ALLOWED"
+"Playtime Requirements" = 2160
+"Required Account Age" = 0
 "# Required Character Age" = 0
 "# Spawn Positions" = 1
 "# Total Positions" = 1
 
 [ROBOTICIST]
-"# Playtime Requirements" = 60
+"Playtime Requirements" = 60
 "# Required Account Age" = 0
 "# Required Character Age" = 0
 "# Spawn Positions" = 2
 "# Total Positions" = 2
 
 [SCIENTIST]
-"# Playtime Requirements" = 60
+"Playtime Requirements" = 60
 "# Required Account Age" = 0
 "# Required Character Age" = 0
-"# Spawn Positions" = 3
-"# Total Positions" = 5
+"Spawn Positions" = 3
+"Total Positions" = 5
 
 [SECURITY_OFFICER]
-"# Playtime Requirements" = 300
-"# Required Account Age" = 7
+"Playtime Requirements" = 2880
+"Required Account Age" = 0
 "# Required Character Age" = 0
-"# Spawn Positions" = 5
-"# Total Positions" = 5
+"Spawn Positions" = 6
+"Total Positions" = 6
 
 [SHAFT_MINER]
 "# Playtime Requirements" = 0
@@ -272,29 +272,36 @@
 "# Total Positions" = 3
 
 [STATION_ENGINEER]
-"# Playtime Requirements" = 60
+"Playtime Requirements" = 60
 "# Required Account Age" = 0
 "# Required Character Age" = 0
-"# Spawn Positions" = 5
-"# Total Positions" = 5
+"Spawn Positions" = 7
+"Total Positions" = 7
 
 [VETERAN_ADVISOR]
-"# Playtime Requirements" = 6000
-"# Required Account Age" = 7
+"# Playtime Requirements" = 1440
+"# Required Account Age" = 0
 "# Required Character Age" = 0
 "# Spawn Positions" = 0
 "# Total Positions" = 0
 
 [WARDEN]
-"# Playtime Requirements" = 300
-"# Required Account Age" = 7
+"Playtime Requirements" = 2880
+"Required Account Age" = 0
 "# Required Character Age" = 0
 "# Spawn Positions" = 1
 "# Total Positions" = 1
 
 [WORKER]
-"# Playtime Requirements" = 0
+"Playtime Requirements" = 60
 "# Required Account Age" = 0
 "# Required Character Age" = 0
-"# Spawn Positions" = 3
-"# Total Positions" = 3
+"Spawn Positions" = 3
+"Total Positions" = 3
+
+[BRIG_PHYSICIAN]
+"Playtime Requirements" = 2880
+"# Required Account Age" = 0
+"# Required Character Age" = 0
+"# Spawn Positions" = 1
+"# Total Positions" = 1
