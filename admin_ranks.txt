@@ -35,28 +35,23 @@
 #EVERYTHING = Simply gives you everything without having to type every flag.
 #@ = special keyword for the current permission type that adds all the keywords that the preceding rank has of the same type.
 
-Name = Admin Observer
-Include =
-Exclude = AUTOADMIN
-Edit =
-
-Name = Moderator
-Include = ADMIN
+Name = Head Admin
+Include = EVERYTHING
 Exclude =
-Edit =
+Edit = EVERYTHING
 
-Name = Admin Candidate
-Include = @
-Exclude =
-Edit =
+Name = Admin
+Include = EVERYTHING
+Exclude = PERMISSIONS DBRANKS DEBUG POSESS STEALTH
+Edit = VAREDIT
 
 Name = Trial Admin
-Include = @ SPAWN VAREDIT BAN
+Include = ADMIN BAN POLL SPAWN MENTOR
 Exclude =
 Edit =
 
-Name = Badmin
-Include = @ POSSESS POLL BUILD SERVER FUN
+Name = Mentor
+Include = ADMIN POLL MENTOR
 Exclude =
 Edit =
 
@@ -80,17 +75,17 @@ Include = EVERYTHING
 Exclude =
 Edit = EVERYTHING
 
-Name = Coder
-Include = DEBUG VAREDIT SERVER SPAWN POLL
+Name = Maintainer
+Include = DEBUG VAREDIT SERVER POLL POSSESS SPAWN FUN ADMIN SOUND BUILD
 Exclude = AUTOADMIN
 Edit =
 
-Name = Mentor
-Include = MENTOR
-Exclude = ADMIN
+Name = Psychonaut
+Include = EVERYTHING
+Exclude = AUTOADMIN DBRANKS PERMISSIONS
 Edit =
 
-Name = Event Manager
-Include = FUN ADMIN DEBUG VAREDIT SPAWN POLL
-Exclude = AUTOADMIN
+Name = Senior Admin
+Include = EVERYTHING
+Exclude = DBRANKS
 Edit =
