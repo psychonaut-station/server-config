@@ -639,7 +639,7 @@ PR_ANNOUNCEMENTS_PER_ROUND 5
 
 # Webhook URL for Discord rounstart alerts
 ENABLE_DISCORD_ROUND_ALERTS
-DISCORD_ROUND_ALERT_WEBHOOK_URL https://discord.com/api/webhooks/1128283363208351794/NKtxGTnNeYe5iYyr4oevLhKaywHVIYbRqU-pAYqa3ugoh1fG4xMo7tvs9tsf5R8-jMNx
+#DISCORD_ROUND_ALERT_WEBHOOK_URL [redacted]
 DISCORD_ROUND_ALERT_ROLE_ID 968246531784314930
 
 ## Causes configuration errors to spit out runtimes
