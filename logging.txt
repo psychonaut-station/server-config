@@ -111,5 +111,8 @@ LOG_WHISPER
 ## log manual target zone switching
 LOG_ZONE_SWITCH
 
+## log player image creation
+LOG_IMAGE
+
 ## log e-jukebox
 LOG_JUKEBOX
