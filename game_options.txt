@@ -597,6 +597,9 @@ SPY_EASY_REWARD_TC_THRESHOLD 5
 ## Also functions as the upper end for medium bounties.
 SPY_HARD_REWARD_TC_THRESHOLD 15
 
+## Minimum time before a heretic can ascend, in minutes
+# MINIMUM_ASCENSION_TIME 3
+
 ## Modular Room Weight Config
 ## See modules\mapping\modular_rooms for the full modular room list
 ## Make sure there is one space between the room_id and the weight value.
