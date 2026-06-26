@@ -319,20 +319,26 @@ LAW_WEIGHT paladin,1
 LAW_WEIGHT paladin5,1
 LAW_WEIGHT robocop,2
 LAW_WEIGHT corporate,4
-LAW_WEIGHT hippocratic,2
+LAW_WEIGHT hippocratic,1
 LAW_WEIGHT maintain,4
-LAW_WEIGHT liveandletlive,2
-LAW_WEIGHT peacekeeper,4
+LAW_WEIGHT liveandletlive,0
+LAW_WEIGHT peacekeeper,0
 LAW_WEIGHT ten_commandments,2
 LAW_WEIGHT nutimov,2
 
+## bizim sunucumuza eklenen ozel lawlar
+LAW_WEIGHT clown,1
+LAW_WEIGHT friendbot,1
+LAW_WEIGHT researcher,1
+LAW_WEIGHT siliconcouncil,1
+
 ## Quirky laws. Shouldn't cause too much harm
-LAW_WEIGHT reporter,1
+LAW_WEIGHT reporter,2
 LAW_WEIGHT hulkamania,1
 LAW_WEIGHT tyrant,1
 LAW_WEIGHT overlord,1
-LAW_WEIGHT painter,1
-LAW_WEIGHT dungeon_master,1
+LAW_WEIGHT painter,0
+LAW_WEIGHT dungeon_master,0
 LAW_WEIGHT thinkermov,1
 
 ## Bad idea laws. Probably shouldn't enable these
