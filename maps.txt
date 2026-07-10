@@ -22,18 +22,13 @@ map deltastation
 	votable
 endmap
 
-map ancientdeltastation
-	minplayers 0
-	votable
-endmap
-
 map icebox
-	minplayers 0
+	minplayers 15
 	votable
 endmap
 
 map catwalkstation
-	minplayers 25
+	minplayers 30
 	votable
 endmap
 
@@ -55,9 +50,9 @@ map nebulastation
 	votable
 endmap
 
-map wawastation
+map kilostation
 	votable
-	minplayers 25
+	maxplayers 25
 endmap
 
 # Debug-only maps.
